@@ -1,0 +1,402 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28140\viewh15440\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="tr">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>DietLio - Pazar Ara\uc0\u351 t\u305 rmas\u305  Stratejik Raporu</title>\
+    <!-- Tailwind CSS -->\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <!-- Chart.js for data visualization -->\
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>\
+    <!-- Google Fonts: Inter -->\
+    <link rel="preconnect" href="https://fonts.googleapis.com">\
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">\
+    <style>\
+        body \{\
+            font-family: 'Inter', sans-serif;\
+            background-color: #f8fafc; /* gray-50 */\
+        \}\
+        .chart-container \{\
+            position: relative;\
+            height: 350px;\
+            width: 100%;\
+        \}\
+        .card \{\
+            background-color: white;\
+            border-radius: 0.75rem;\
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;\
+        \}\
+        .card:hover \{\
+            transform: translateY(-5px);\
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);\
+        \}\
+        .section-title \{\
+            font-size: 1.875rem; /* text-3xl */\
+            font-weight: 800; /* font-extrabold */\
+            color: #1e293b; /* slate-800 */\
+            border-bottom: 3px solid #3b82f6; /* blue-500 */\
+            padding-bottom: 0.5rem;\
+            margin-bottom: 2rem;\
+        \}\
+        .hype-stage \{\
+            border-left: 3px solid;\
+            padding-left: 1rem;\
+            margin-bottom: 1.5rem;\
+        \}\
+    </style>\
+</head>\
+<body class="text-slate-700">\
+\
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">\
+        <!-- Header -->\
+        <header class="text-center mb-12">\
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800">DietLio Projesi</h1>\
+            <p class="text-xl text-slate-500 mt-2">Kapsaml\uc0\u305  Pazar Ara\u351 t\u305 rmas\u305  ve Stratejik Analiz Raporu</p>\
+        </header>\
+\
+        <!-- Y\'f6netici \'d6zeti -->\
+        <section id="executive-summary" class="mb-12">\
+            <h2 class="section-title">Y\'f6netici \'d6zeti</h2>\
+            <div class="card p-6 text-base leading-relaxed">\
+                <p class="mb-4">\
+                    Bu rapor, tohum a\uc0\u351 amas\u305 ndaki <strong>DietLio</strong> giri\u351 imi i\'e7in k\'fcresel ve T\'fcrkiye pazarlar\u305 ndaki dijital sa\u287 l\u305 k ve beslenme trendlerini analiz etmektedir. Pazar\u305 n h\u305 zla b\'fcy\'fcd\'fc\u287 \'fc (K\'fcresel Dijital Sa\u287 l\u305 k: 288-420 Milyar USD, T\'fcrkiye: 4,3 Milyar USD), ancak olduk\'e7a par\'e7al\u305  bir yap\u305 da oldu\u287 u tespit edilmi\u351 tir. B\'fcy\'fcmeyi tetikleyen ana fakt\'f6rler <strong>Gen Z ve Y ku\u351 aklar\u305 n\u305 n wellness odakl\u305 l\u305 \u287 \u305 </strong> ve tele-sa\u287 l\u305 k hizmetlerinin yayg\u305 nla\u351 mas\u305 d\u305 r.\
+                </p>\
+                <p class="mb-4">\
+                    Rekabet ortam\uc0\u305 nda, rakiplerin hi\'e7biri <strong>beslenme, mental sa\u287 l\u305 k ve fiziksel aktiviteyi</strong> b\'fct\'fcnc\'fcl bir \u351 ekilde entegre edememi\u351 tir. Bu durum, DietLio i\'e7in \'f6nemli bir stratejik f\u305 rsat sunmaktad\u305 r. Teknolojik olarak giyilebilir cihaz entegrasyonu ve tele-sa\u287 l\u305 k "olmazsa olmaz" haline gelirken, veri g\'fcvenli\u287 i (KVKK/GDPR) ve ki\u351 iselle\u351 tirme kritik ba\u351 ar\u305  fakt\'f6rleridir.\
+                </p>\
+                <p>\
+                    <strong>Genel \'f6neri:</strong> DietLio, b\'fct\'fcnc\'fcl bir dijital sa\uc0\u287 l\u305 k ko\'e7lu\u287 u sunmal\u305 , Gen Z'ye y\'f6nelik oyunla\u351 t\u305 r\u305 lm\u305 \u351  deneyimler sa\u287 lamal\u305  ve en y\'fcksek veri g\'fcvenli\u287 i standartlar\u305 na odaklanarak pazarda farkl\u305 la\u351 mal\u305 d\u305 r.\
+                </p>\
+            </div>\
+        </section>\
+\
+        <!-- Pazar B\'fcy\'fckl\'fc\uc0\u287 \'fc ve Dinamikleri -->\
+        <section id="market-size" class="mb-12">\
+            <h2 class="section-title">Pazar B\'fcy\'fckl\'fc\uc0\u287 \'fc ve B\'fcy\'fcme Oranlar\u305  (2024/25)</h2>\
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">\
+                <div class="card p-6">\
+                    <h3 class="text-xl font-bold mb-4 text-center text-slate-700">Dijital Sa\uc0\u287 l\u305 k Pazar\u305  B\'fcy\'fckl\'fc\u287 \'fc (TAM)</h3>\
+                    <div class="chart-container">\
+                        <canvas id="digitalHealthMarketChart"></canvas>\
+                    </div>\
+                </div>\
+                <div class="card p-6">\
+                    <h3 class="text-xl font-bold mb-4 text-center text-slate-700">Dijital Beslenme Uygulamalar\uc0\u305  Pazar\u305  (TAM)</h3>\
+                    <div class="chart-container">\
+                        <canvas id="nutritionMarketChart"></canvas>\
+                    </div>\
+                </div>\
+            </div>\
+            <div class="card p-6 mt-8">\
+                <h3 class="text-xl font-bold mb-4 text-slate-700">Pazar \'d6l\'e7\'fcm\'fc \'d6zeti (TAM-SAM-SOM, Milyar USD)</h3>\
+                <div class="overflow-x-auto">\
+                    <table class="w-full text-left">\
+                        <thead>\
+                            <tr class="bg-slate-100">\
+                                <th class="p-3 font-semibold">Pazar / B\'f6lge</th>\
+                                <th class="p-3 font-semibold">TAM</th>\
+                                <th class="p-3 font-semibold">SAM (Varsay\uc0\u305 msal)</th>\
+                                <th class="p-3 font-semibold">SOM (Varsay\uc0\u305 msal)</th>\
+                                <th class="p-3 font-semibold">CAGR</th>\
+                            </tr>\
+                        </thead>\
+                        <tbody>\
+                            <tr class="border-b">\
+                                <td class="p-3 font-medium text-blue-600">Dijital Sa\uc0\u287 l\u305 k - K\'fcresel</td>\
+                                <td class="p-3">288 - 420</td>\
+                                <td class="p-3">236 - 345</td>\
+                                <td class="p-3">4.7 - 6.9</td>\
+                                <td class="p-3 text-green-600 font-bold">11.7% - 22.2%</td>\
+                            </tr>\
+                            <tr class="border-b">\
+                                <td class="p-3 font-medium text-blue-600">Dijital Sa\uc0\u287 l\u305 k - T\'fcrkiye</td>\
+                                <td class="p-3">4.3</td>\
+                                <td class="p-3">~3.74</td>\
+                                <td class="p-3">~0.074</td>\
+                                <td class="p-3 text-green-600 font-bold">12.4% - 15.8%</td>\
+                            </tr>\
+                            <tr class="border-b">\
+                                <td class="p-3 font-medium text-teal-600">Dijital Beslenme - K\'fcresel</td>\
+                                <td class="p-3">0.31 - 2.14</td>\
+                                <td class="p-3">0.08 - 0.53</td>\
+                                <td class="p-3">0.0015 - 0.026</td>\
+                                <td class="p-3 text-green-600 font-bold">13% - 17%</td>\
+                            </tr>\
+                            <tr>\
+                                <td class="p-3 font-medium text-teal-600">Online Beslenme - T\'fcrkiye</td>\
+                                <td class="p-3">0.004 - 0.026</td>\
+                                <td class="p-3">0.001 - 0.007</td>\
+                                <td class="p-3">0.00002 - 0.00035</td>\
+                                <td class="p-3 text-green-600 font-bold">~13% - 17%</td>\
+                            </tr>\
+                        </tbody>\
+                    </table>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Rekabet Ortam\uc0\u305  -->\
+        <section id="competition" class="mb-12">\
+            <h2 class="section-title">Rekabet Ortam\uc0\u305  ve F\u305 rsatlar</h2>\
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">\
+                <!-- Rakipler -->\
+                <div class="space-y-6">\
+                    <div class="card p-6">\
+                        <h4 class="font-bold text-lg mb-2 text-rose-600">Noom (Global B2C)</h4>\
+                        <p><strong>G\'fc\'e7l\'fc Y\'f6n:</strong> Psikoloji odakl\uc0\u305  yakla\u351 \u305 m, tele-sa\u287 l\u305 k ve GLP-1 programlar\u305 .</p>\
+                        <p><strong>Zay\uc0\u305 f Y\'f6n:</strong> Y\'fcksek fiyat, T\'fcrkiye'ye lokalize de\u287 il, otomatik ko\'e7luk mesajlar\u305 .</p>\
+                    </div>\
+                    <div class="card p-6">\
+                        <h4 class="font-bold text-lg mb-2 text-sky-600">Nutrium (Global B2B)</h4>\
+                        <p><strong>G\'fc\'e7l\'fc Y\'f6n:</strong> Kapsaml\uc0\u305  besin analizi, GDPR/HIPAA uyumu, \'e7oklu dil deste\u287 i.</p>\
+                        <p><strong>Zay\uc0\u305 f Y\'f6n:</strong> Karma\u351 \u305 k aray\'fcz, s\u305 n\u305 rl\u305  pazarlama ara\'e7lar\u305 .</p>\
+                    </div>\
+                     <div class="card p-6">\
+                        <h4 class="font-bold text-lg mb-2 text-rose-600">Diyetkolik (T\'fcrkiye B2C)</h4>\
+                        <p><strong>G\'fc\'e7l\'fc Y\'f6n:</strong> Geni\uc0\u351  kullan\u305 c\u305  taban\u305 , AI ile foto\u287 raftan kalori tahmini, uygun fiyat.</p>\
+                        <p><strong>Zay\uc0\u305 f Y\'f6n:</strong> Zay\u305 f psikolojik destek, s\u305 n\u305 rl\u305  diyetisyen entegrasyonu.</p>\
+                    </div>\
+                    <div class="card p-6">\
+                        <h4 class="font-bold text-lg mb-2 text-sky-600">Heltia (T\'fcrkiye B2B/B2C)</h4>\
+                        <p><strong>G\'fc\'e7l\'fc Y\'f6n:</strong> Mental sa\uc0\u287 l\u305 k ve beslenmeyi birle\u351 tiren yakla\u351 \u305 m, kurumsal m\'fc\u351 teri a\u287 \u305 .</p>\
+                        <p><strong>Zay\uc0\u305 f Y\'f6n:</strong> Mobil uygulamas\u305  yok, \u351 effaf olmayan fiyatland\u305 rma.</p>\
+                    </div>\
+                </div>\
+                <!-- F\uc0\u305 rsatlar -->\
+                <div class="card p-8 bg-blue-50 border border-blue-200">\
+                    <h3 class="text-2xl font-bold mb-4 text-blue-800">Stratejik Pazar Bo\uc0\u351 luklar\u305  ve F\u305 rsatlar</h3>\
+                    <ul class="space-y-4 list-disc list-inside text-blue-900">\
+                        <li>\
+                            <strong>Entegre Yakla\uc0\u351 \u305 m Eksikli\u287 i:</strong> Hi\'e7bir rakip beslenme, mental sa\u287 l\u305 k ve fiziksel aktiviteyi b\'fct\'fcnc\'fcl bir ekosistemde tam olarak birle\u351 tiremiyor. Bu, DietLio i\'e7in en b\'fcy\'fck farkl\u305 la\u351 ma alan\u305 d\u305 r.\
+                        </li>\
+                        <li>\
+                            <strong>Gen Z Ku\uc0\u351 a\u287 \u305 n\u305  Yakalama:</strong> Yerel uygulamalar, gen\'e7 ku\u351 a\u287 \u305 n bekledi\u287 i ki\u351 iselle\u351 tirilmi\u351 , oyunla\u351 t\u305 r\u305 lm\u305 \u351  ve sosyal medya benzeri deneyimleri sunmakta yetersiz kal\u305 yor.\
+                        </li>\
+                        <li>\
+                            <strong>Veri G\'fcvenli\uc0\u287 i ve \u350 effafl\u305 k:</strong> Rakiplerin KVKK/GDPR uyumu konusunda net ileti\u351 im kurmamas\u305 , g\'fcven in\u351 a ederek \'f6ne \'e7\u305 kma f\u305 rsat\u305  sunuyor.\
+                        </li>\
+                        <li>\
+                            <strong>Kurumsal Wellness F\uc0\u305 rsatlar\u305 :</strong> Heltia ve Askipo'nun ba\u351 ar\u305 s\u305 , \u351 irketlere y\'f6nelik beslenme odakl\u305  b\'fct\'fcnc\'fcl wellness paketleri i\'e7in pazarda bir talep oldu\u287 unu g\'f6steriyor.\
+                        </li>\
+                    </ul>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Teknoloji ve \uc0\u304 novasyon Trendleri -->\
+        <section id="tech-trends" class="mb-12">\
+            <h2 class="section-title">Teknoloji ve \uc0\u304 novasyon Trendleri</h2>\
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">\
+                <!-- Gartner Hype Cycle -->\
+                <div class="card p-6">\
+                    <h3 class="text-xl font-bold mb-6 text-center text-slate-700">Gartner Hype D\'f6ng\'fcs\'fc (Kavramsal G\'f6sterim)</h3>\
+                    <div class="relative">\
+                        <!-- Innovation Trigger -->\
+                        <div class="hype-stage border-cyan-500">\
+                            <h4 class="font-bold text-cyan-600">\uc0\u304 novasyon Tetikleyicisi</h4>\
+                            <p class="text-sm">Nutrigenomik, VR/AR ile Yeme Bozuklu\uc0\u287 u Terapisi</p>\
+                        </div>\
+                        <!-- Peak of Inflated Expectations -->\
+                        <div class="hype-stage border-purple-500">\
+                            <h4 class="font-bold text-purple-600">\uc0\u350 i\u351 irilmi\u351  Beklentiler Zirvesi</h4>\
+                            <p class="text-sm">AI ile Foto\uc0\u287 raftan Besin Analizi, AI Destekli Ki\u351 iselle\u351 tirme</p>\
+                        </div>\
+                        <!-- Trough of Disillusionment -->\
+                         <div class="hype-stage border-red-500">\
+                            <h4 class="font-bold text-red-600">Hayal K\uc0\u305 r\u305 kl\u305 \u287 \u305  \'c7ukuru</h4>\
+                            <p class="text-sm">(AI chatbot'lar\uc0\u305 n sa\u287 l\u305 kta do\u287 ruluk sorunlar\u305  bu a\u351 amaya ge\'e7i\u351 i tetikliyor)</p>\
+                        </div>\
+                        <!-- Slope of Enlightenment -->\
+                        <div class="hype-stage border-amber-500">\
+                            <h4 class="font-bold text-amber-600">Ayd\uc0\u305 nlanma E\u287 risi</h4>\
+                            <p class="text-sm">Giyilebilir Cihaz Entegrasyonu, Entegre Sa\uc0\u287 l\u305 k Platformlar\u305 </p>\
+                        </div>\
+                        <!-- Plateau of Productivity -->\
+                        <div class="hype-stage border-green-500 mb-0">\
+                            <h4 class="font-bold text-green-600">Verimlilik Platosu</h4>\
+                            <p class="text-sm">Tele-sa\uc0\u287 l\u305 k ve Re\'e7ete Y\'f6netimi, Veri G\'fcvenli\u287 i Teknolojileri</p>\
+                        </div>\
+                    </div>\
+                </div>\
+                <!-- Trend Radar -->\
+                <div class="card p-6">\
+                    <h3 class="text-xl font-bold mb-6 text-center text-slate-700">Trend Radar\uc0\u305  (DietLio \u304 \'e7in Stratejik \'d6ncelikler)</h3>\
+                    <div class="space-y-4">\
+                        <div class="p-4 rounded-lg bg-green-100 border border-green-200">\
+                            <h4 class="font-bold text-lg text-green-800">ADOPT (Hemen Benimse)</h4>\
+                            <ul class="list-disc list-inside text-sm text-green-700 mt-2">\
+                                <li>Tele-sa\uc0\u287 l\u305 k ve Uzak Dan\u305 \u351 manl\u305 k</li>\
+                                <li>Giyilebilir Cihaz Entegrasyonu</li>\
+                                <li>Veri G\'fcvenli\uc0\u287 i ve \u350 effafl\u305 k Teknolojileri</li>\
+                                <li>Entegre Sa\uc0\u287 l\u305 k Platformu Yakla\u351 \u305 m\u305 </li>\
+                            </ul>\
+                        </div>\
+                        <div class="p-4 rounded-lg bg-blue-100 border border-blue-200">\
+                            <h4 class="font-bold text-lg text-blue-800">TRIAL (Dene ve Geli\uc0\u351 tir)</h4>\
+                            <ul class="list-disc list-inside text-sm text-blue-700 mt-2">\
+                                <li>Gen Z Odakl\uc0\u305  Oyunla\u351 t\u305 rma (Gamification)</li>\
+                                <li>Sosyal Topluluk \'d6zellikleri</li>\
+                            </ul>\
+                        </div>\
+                        <div class="p-4 rounded-lg bg-yellow-100 border border-yellow-200">\
+                            <h4 class="font-bold text-lg text-yellow-800">ASSESS (De\uc0\u287 erlendir ve Ara\u351 t\u305 r)</h4>\
+                            <ul class="list-disc list-inside text-sm text-yellow-700 mt-2">\
+                                <li>AI Tabanl\uc0\u305  Ki\u351 iselle\u351 tirilmi\u351  \'d6neriler</li>\
+                                <li>AI ile Foto\uc0\u287 raftan Besin Analizi</li>\
+                            </ul>\
+                        </div>\
+                        <div class="p-4 rounded-lg bg-gray-100 border border-gray-200">\
+                            <h4 class="font-bold text-lg text-gray-800">HOLD (Bekle ve Takip Et)</h4>\
+                            <ul class="list-disc list-inside text-sm text-gray-700 mt-2">\
+                                <li>Nutrigenomik ve Genetik Testler</li>\
+                                <li>VR/AR ile Terapi Uygulamalar\uc0\u305 </li>\
+                            </ul>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Stratejik Yol Haritas\uc0\u305  -->\
+        <section id="roadmap">\
+            <h2 class="section-title">\'d6nerilen Stratejik Yol Haritas\uc0\u305 </h2>\
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">\
+                <div class="card p-6">\
+                    <h3 class="font-bold text-xl mb-3 text-indigo-600">K\uc0\u305 sa Vade (0-12 Ay)</h3>\
+                    <ul class="list-disc list-inside space-y-2 text-sm">\
+                        <li><strong>MVP Geli\uc0\u351 tirme:</strong> Tele-diyetisyen, giyilebilir cihaz entegrasyonu ve temel beslenme plan\u305  mod\'fclleri.</li>\
+                        <li><strong>Veri G\'fcvenli\uc0\u287 i Altyap\u305 s\u305 :</strong> KVKK/GDPR uyumlu \u351 ifreleme ve kullan\u305 c\u305  veri panelleri.</li>\
+                        <li><strong>Fiyatland\uc0\u305 rma Stratejisi:</strong> Freemium model ve uygun abonelik planlar\u305  olu\u351 turma.</li>\
+                    </ul>\
+                </div>\
+                <div class="card p-6">\
+                    <h3 class="font-bold text-xl mb-3 text-indigo-600">Orta Vade (1-2 Y\uc0\u305 l)</h3>\
+                    <ul class="list-disc list-inside space-y-2 text-sm">\
+                        <li><strong>Oyunla\uc0\u351 t\u305 rma ve Topluluk:</strong> Rozetler, meydan okumalar ve sosyal beslenme g\'fcnl\'fc\u287 \'fc \'f6zellikleri.</li>\
+                        <li><strong>AI Destekli \'d6neriler:</strong> Basit makine \'f6\uc0\u287 renimi ile mikro al\u305 \u351 kanl\u305 k \'f6nerileri sunma.</li>\
+                        <li><strong>Kurumsal Pilot Projeler:</strong> \uc0\u350 irketlerle \'e7al\u305 \u351 an sa\u287 l\u305 \u287 \u305  programlar\u305  ba\u351 latma.</li>\
+                    </ul>\
+                </div>\
+                <div class="card p-6">\
+                    <h3 class="font-bold text-xl mb-3 text-indigo-600">Uzun Vade (2+ Y\uc0\u305 l)</h3>\
+                    <ul class="list-disc list-inside space-y-2 text-sm">\
+                        <li><strong>\uc0\u304 leri AI ve Ar-Ge:</strong> Nutrigenomik ve geli\u351 mi\u351  AI modelleri i\'e7in akademik i\u351 birlikleri.</li>\
+                        <li><strong>Mental Sa\uc0\u287 l\u305 k Entegrasyonu:</strong> VR/AR terapileri i\'e7in pilot \'e7al\u305 \u351 malar y\'fcr\'fctme.</li>\
+                        <li><strong>Uluslararas\uc0\u305  Geni\u351 leme:</strong> EHDS f\u305 rsatlar\u305 ndan yararlanarak AB pazar\u305 na giri\u351  planlama.</li>\
+                    </ul>\
+                </div>\
+            </div>\
+        </section>\
+\
+    </div>\
+\
+    <script>\
+        // Chart.js script for data visualization\
+\
+        // 1. Digital Health Market Chart\
+        const digitalHealthCtx = document.getElementById('digitalHealthMarketChart').getContext('2d');\
+        new Chart(digitalHealthCtx, \{\
+            type: 'bar',\
+            data: \{\
+                labels: ['K\'fcresel Dijital Sa\uc0\u287 l\u305 k', 'T\'fcrkiye Dijital Sa\u287 l\u305 k'],\
+                datasets: [\{\
+                    label: 'Pazar B\'fcy\'fckl\'fc\uc0\u287 \'fc (TAM, Milyar USD)',\
+                    data: [354.3, 4.3], // Ortalama bir de\uc0\u287 er al\u305 nd\u305 \
+                    backgroundColor: [\
+                        'rgba(59, 130, 246, 0.7)', // blue-500\
+                        'rgba(239, 68, 68, 0.7)'  // red-500\
+                    ],\
+                    borderColor: [\
+                        'rgba(59, 130, 246, 1)',\
+                        'rgba(239, 68, 68, 1)'\
+                    ],\
+                    borderWidth: 1\
+                \}]\
+            \},\
+            options: \{\
+                responsive: true,\
+                maintainAspectRatio: false,\
+                plugins: \{\
+                    legend: \{\
+                        display: false\
+                    \},\
+                    tooltip: \{\
+                        callbacks: \{\
+                            label: function(context) \{\
+                                return ` $\{context.raw\} Milyar USD`;\
+                            \}\
+                        \}\
+                    \}\
+                \},\
+                scales: \{\
+                    y: \{\
+                        beginAtZero: true,\
+                        title: \{\
+                            display: true,\
+                            text: 'Milyar USD'\
+                        \}\
+                    \}\
+                \}\
+            \}\
+        \});\
+\
+        // 2. Nutrition Market Chart\
+        const nutritionCtx = document.getElementById('nutritionMarketChart').getContext('2d');\
+        new Chart(nutritionCtx, \{\
+            type: 'bar',\
+            data: \{\
+                labels: ['K\'fcresel Dijital Beslenme', 'T\'fcrkiye Online Beslenme'],\
+                datasets: [\{\
+                    label: 'Pazar B\'fcy\'fckl\'fc\uc0\u287 \'fc (TAM, Milyar USD)',\
+                    data: [1.22, 0.015], // Ortalama bir de\uc0\u287 er al\u305 nd\u305 \
+                    backgroundColor: [\
+                        'rgba(20, 184, 166, 0.7)', // teal-500\
+                        'rgba(249, 115, 22, 0.7)' // orange-500\
+                    ],\
+                    borderColor: [\
+                        'rgba(20, 184, 166, 1)',\
+                        'rgba(249, 115, 22, 1)'\
+                    ],\
+                    borderWidth: 1\
+                \}]\
+            \},\
+            options: \{\
+                responsive: true,\
+                maintainAspectRatio: false,\
+                plugins: \{\
+                    legend: \{\
+                        display: false\
+                    \},\
+                    tooltip: \{\
+                        callbacks: \{\
+                            label: function(context) \{\
+                                return ` $\{context.raw\} Milyar USD`;\
+                            \}\
+                        \}\
+                    \}\
+                \},\
+                scales: \{\
+                    y: \{\
+                        beginAtZero: true,\
+                        title: \{\
+                            display: true,\
+                            text: 'Milyar USD'\
+                        \}\
+                    \}\
+                \}\
+            \}\
+        \});\
+    </script>\
+\
+</body>\
+</html>\
+}
